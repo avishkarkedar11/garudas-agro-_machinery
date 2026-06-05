@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Gurudas Agro Machinery Website
 
 React + TypeScript single-page application for **Gurudas Agro Machinery**, an agricultural machinery dealership in Newasa, Ahilyanagar.
@@ -17,3 +18,6 @@ npm run dev
 
 Then open `http://localhost:5173` in your browser.
 
+=======
+# garudas-agro-_machinery
+>>>>>>> 5d4cd0e1b0cf000fe15aecb7e2bae3807edae62e
