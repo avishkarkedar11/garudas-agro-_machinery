@@ -8,7 +8,7 @@ const machines = [
     dealerColor: "green",
     badgeText: "Official Dealer",
     image:
-      "https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80",
+      "src/app/image/shopping.webp",
   },
   {
     name: "Kartar Harvester",
@@ -16,7 +16,7 @@ const machines = [
     dealerColor: "orange",
     badgeText: "Sub Dealer",
     image:
-      "https://images.unsplash.com/photo-1600402444447-55e03e271c52?auto=format&fit=crop&w=800&q=80",
+      "src/app/image/kartar-4000-14-feet-combine-harvester-5.jpg",
   },
   {
     name: "Straw Reaper",
@@ -24,7 +24,7 @@ const machines = [
     dealerColor: "green",
     badgeText: "In Stock",
     image:
-      "https://images.unsplash.com/photo-1514849486491-1e2a3be26891?auto=format&fit=crop&w=800&q=80",
+      "src/app/image/Straw-Reaper.png",
   },
 ];
 
