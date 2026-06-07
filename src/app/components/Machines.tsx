@@ -1,30 +1,31 @@
 import { Link } from "react-router";
 import { BadgeCheck, Phone, Wrench } from "lucide-react";
 
+import malkitImg from "../image/shopping.webp";
+import kartarImg from "../image/kartar-4000-14-feet-combine-harvester-5.jpg";
+import strawReaperImg from "../image/Straw-Reaper.png";
+
 const machines = [
   {
     name: "Malkit Combine Harvester",
     dealerType: "Official Dealer",
     dealerColor: "green",
     badgeText: "Official Dealer",
-    image:
-      "src/app/image/shopping.webp",
+    image: malkitImg,
   },
   {
     name: "Kartar Harvester",
     dealerType: "Sub Dealer",
     dealerColor: "orange",
     badgeText: "Sub Dealer",
-    image:
-      "src/app/image/kartar-4000-14-feet-combine-harvester-5.jpg",
+    image: kartarImg,
   },
   {
     name: "Straw Reaper",
     dealerType: "In Stock",
     dealerColor: "green",
     badgeText: "In Stock",
-    image:
-      "src/app/image/Straw-Reaper.png",
+    image: strawReaperImg,
   },
 ];
 

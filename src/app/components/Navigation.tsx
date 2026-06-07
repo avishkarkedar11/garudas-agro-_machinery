@@ -17,54 +17,56 @@ export function Navigation() {
   const handleClose = () => setOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-green-100 bg-white/90 shadow-sm backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
-        <Link to="/" className="flex flex-col" onClick={handleClose}>
-          <span className="text-lg font-extrabold tracking-tight text-green-700 sm:text-2xl">
-            Gurudas Agro Machinery
-          </span>
-          <span className="text-xs font-medium text-gray-600 sm:text-sm">
-            Official Dealer of Malkit Harvesting | Sub Dealer of Kartar Harvesting
-          </span>
-        </Link>
+    <>
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-green-100 bg-white/90 shadow-sm backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 lg:px-6">
+          <Link to="/" className="flex flex-col" onClick={handleClose}>
+            <span className="text-lg font-extrabold tracking-tight text-green-700 sm:text-2xl">
+              Gurudas Agro Machinery
+            </span>
+            <span className="text-xs font-medium text-gray-600 sm:text-sm">
+              Official Dealer of Malkit Harvesting | Sub Dealer of Kartar Harvesting
+            </span>
+          </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                [
-                  "text-sm font-semibold transition-colors",
-                  isActive ? "text-green-700" : "text-gray-700 hover:text-green-700",
-                ].join(" ")
-              }
-              end={item.to === "/"}
+          <nav className="hidden items-center gap-6 lg:flex">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                className={({ isActive }) =>
+                  [
+                    "text-sm font-semibold transition-colors",
+                    isActive ? "text-green-700" : "text-gray-700 hover:text-green-700",
+                  ].join(" ")
+                }
+                end={item.to === "/"}
+              >
+                {item.label}
+              </NavLink>
+            ))}
+            <a
+              href="tel:+919921996694"
+              className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
             >
-              {item.label}
-            </NavLink>
-          ))}
-          <a
-            href="tel:+919921996694"
-            className="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-orange-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 focus-visible:ring-offset-2"
-          >
-            <Phone className="h-4 w-4" />
-            <span>Call Now</span>
-          </a>
-        </nav>
+              <Phone className="h-4 w-4" />
+              <span>Call Now</span>
+            </a>
+          </nav>
 
-        <button
-          type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 lg:hidden"
-          onClick={handleToggle}
-          aria-label="Toggle navigation menu"
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
-      </div>
+          <button
+            type="button"
+            className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 lg:hidden"
+            onClick={handleToggle}
+            aria-label="Toggle navigation menu"
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+      </header>
 
       {open && (
-        <div className="fixed inset-0 z-30 bg-white lg:hidden">
+        <div className="fixed inset-0 z-50 bg-white lg:hidden">
           <div className="flex h-full flex-col">
             <div className="bg-gradient-to-r from-green-600 to-green-700 px-4 py-4 text-white">
               <div className="mx-auto flex max-w-6xl items-center justify-between">
@@ -122,7 +124,7 @@ export function Navigation() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
 

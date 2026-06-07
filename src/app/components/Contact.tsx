@@ -185,14 +185,14 @@ export function Contact() {
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
-                  <Instagram className="h-5 w-5 text-green-600" />
+                  <Instagram className="h-5 w-5 text-green-600 shrink-0" />
                   <a
-                    href="https://instagram.com/gurudasagro"
+                    href="https://www.instagram.com/gurudas_agro_machinery?igsh=OGVpeXcyMHl5aHJw"
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-green-700"
+                    className="hover:text-green-700 truncate"
                   >
-                    @gurudasagro
+                    @gurudas_agro_machinery
                   </a>
                 </li>
               </ul>
@@ -214,26 +214,35 @@ export function Contact() {
                   Find Us on Map
                 </h2>
               </div>
-              <div className="mt-3 flex h-40 items-center justify-center rounded-xl bg-gray-200 text-center text-xs text-gray-600">
-                Khadka Phata, Newasa, Ahilyanagar
+              <div className="mt-3 h-64 overflow-hidden rounded-xl bg-gray-200">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  className="border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  src="https://maps.google.com/maps?q=Khadka%20Phata%2C%20in%20front%20of%20Patanjali%20Dairy%20Plant%20%2CTal%3A%20Newasa%2CDist%3A%20Ahilyanagar&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                />
               </div>
-              <button
-                type="button"
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Khadka+Phata,+in+front+of+Patanjali+Dairy+Plant+,Tal:+Newasa,Dist:+Ahilyanagar"
+                target="_blank"
+                rel="noreferrer"
                 className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-gray-900 px-4 py-3 text-sm font-semibold text-white hover:bg-black"
               >
                 Open in Google Maps
-              </button>
+              </a>
             </div>
 
             {/* Instagram button */}
             <a
-              href="https://instagram.com/gurudasagro"
+              href="https://www.instagram.com/gurudas_agro_machinery?igsh=OGVpeXcyMHl5aHJw"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 px-4 py-3 text-lg font-semibold text-white shadow-md hover:opacity-95"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 px-4 py-3 text-[15px] sm:text-lg font-semibold text-white shadow-md hover:opacity-95"
             >
-              <Instagram className="h-5 w-5" />
-              <span>Follow us on Instagram @gurudasagro</span>
+              <Instagram className="h-5 w-5 shrink-0" />
+              <span className="truncate">Follow us on Instagram</span>
             </a>
           </div>
         </div>
